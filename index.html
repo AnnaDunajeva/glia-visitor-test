@@ -18,5 +18,12 @@
   </form>
   <div class="salemove-button"></div>
     <script crossorigin="*" src="//api.beta.salemove.com/salemove_integration.js"></script>
+    <script>
+      let container = parent.document.getElementsByClassName('sm-visitor-app')[0];
+      if (container) {
+        console.log(123)
+        container.focus()
+      }
+    </script>
 </body>
 </html>
