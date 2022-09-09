@@ -19,13 +19,13 @@
   <div class="salemove-button"></div>
     <script crossorigin="*" src="//api.beta.salemove.com/salemove_integration.js"></script>
     <script>
+      setTimeout(() => {
       let container = parent.document.getElementsByClassName('sm-chat-message')[0];
       if (container) {
-        setTimeout(() => {
-           console.log(123)
-           container.focus()
-        }, 10000)
+        console.log(123)
+        container.focus()
       }
+      }, 10000)
     </script>
 </body>
 </html>
