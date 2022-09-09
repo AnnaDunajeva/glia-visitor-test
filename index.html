@@ -21,8 +21,10 @@
     <script>
       let container = parent.document.getElementsByClassName('sm-visitor-app')[0];
       if (container) {
-        console.log(123)
-        container.focus()
+        setTimeout(() => {
+           console.log(123)
+           container.focus()
+        }, 10000)
       }
     </script>
 </body>
