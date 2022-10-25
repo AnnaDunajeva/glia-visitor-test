@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <style>
+    .hidden {display: none;}
+    .visible {display: block;
+  </style
     <h1>
         Test Site for Visitor App
     </h1>
@@ -37,6 +41,7 @@
       function showContainerRight() {
          const container = document.createElement('div')
          container.setAttribute("id", "large-container-right-1");
+         container.classList.add("visible");
          container.style.position = 'absolute'
          container.style.backgroundColor = 'grey'
          container.style.bottom = '0'
@@ -50,7 +55,7 @@
       function hideContainerRight() {
         const element = document.getElementById('large-container-right-1');
         if (element) {
-           element.remove();
+           element.classList.add("hidden");
         }
       }
     </script>
