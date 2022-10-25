@@ -26,8 +26,25 @@
     <button><a href="page-1.html">Go to page 1</a></button>
     <button><a href="https://gliafinancial.com">gliafinancial.com</a></button>
   </div>
-  <div id="large-container-right" style="color: grey; position: absolute; bottom: 0; right: 0; height: 100%; width: 300px"></div>
+  <div>
+    <button onclick="showContainerRight()">Show right container</button>
+  </div>
+  <div id="large-container-right"></div>
   <div class="salemove-button"></div>
     <script crossorigin="*" src="//api.beta.salemove.com/salemove_integration.js"></script>
+    <script>
+      function showContainerRight() {
+         const container = document.createElement('div')
+         container.setAttribute("id", "large-container-right-1");
+         container.style.position = 'absolute'
+         container.style.color = 'grey'
+         container.style.bottom = '0'
+         container.style.right = '0'
+         container.style.height = '100%'
+         container.style.width = '300px'
+         const currentDiv = document.getElementById("large-container-right");
+         currentDiv.appendChild(container)
+      }
+    </script>
 </body>
 </html>
